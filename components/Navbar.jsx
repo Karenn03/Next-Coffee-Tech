@@ -9,7 +9,7 @@ export default function Navbar() {
   const [state, setState] = useState(false);
 
   const navigation = [
-    { title: "Menú", path: "#" },
+    { title: "Menú", path: "/menu" },
     { title: "Mis pedidos", path: "#" },
     { title: "Reservar mesa", path: "#" },
     { title: "Carrito", path: "#" },
