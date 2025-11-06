@@ -63,13 +63,13 @@ export default function Navbar() {
               })}
               <li className="flex-1 items-center justify-end gap-x-6 space-y-3 md:flex md:space-y-0">
                 <Link
-                  href="#"
+                  href="/auth/signIn"
                   className="block py-2 px-4 font-semibold text-base text-center text-[#4A362F] hover:text-[#1E1613] border rounded-lg md:border-none transition-all duration-300 hover:-translate-y-1"
                 >
                   Inicia sesión
                 </Link>
                 <Link
-                  href="#"
+                  href="/auth/signUp"
                   className="block py-2 px-4 font-semibold text-base text-center text-white bg-[#725348] active:bg-[#5E443C] active:shadow-none rounded-lg shadow md:inline transition-all duration-300 hover:shadow-lg hover:bg-[#856155] hover:-translate-y-1"
                 >
                   Regístrate
