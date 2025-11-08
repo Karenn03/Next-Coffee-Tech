@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 import Navbar from "@/components/Navbar";
@@ -8,6 +10,7 @@ import Button1 from "@/components/buttons/Button1";
 import OffersBox from "@/components/boxes/OffersBox";
 import CommentsBox from "@/components/boxes/CommentsBox";
 import Footer from "@/components/Footer";
+import PickupModal from "@/components/modals/PickupModal";
 
 import landing from "@/public/img/landing.jpg";
 import cafePideAqui from "@/public/img/cafe-pide-aqui.png";
@@ -49,7 +52,7 @@ const Home = () => {
               Selecciona tus bebidas y bocadillos favoritos, y relájate mientras nosotros hacemos el resto.
             </p>
             <div className="grid justify-center md:justify-start mt-4">
-              <Button1 option={"Pide a domicilio"} />
+              <Button1 option="Pide a domicilio" />
             </div>
           </div>
           <div className="flex justify-center">
@@ -66,7 +69,11 @@ const Home = () => {
               Perfecto para cuando estás en movimiento pero no quieres renunciar a tu café preferido.
             </p>
             <div className="grid justify-center md:justify-end mt-4">
-              <Button1 option={"Pide para retirar"} />
+              <PickupModal
+                trigger={
+                  <Button1 option="Pide para retirar" />
+                }
+              />
             </div>
           </div>
         </div>

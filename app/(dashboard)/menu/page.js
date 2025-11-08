@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "@/components/Navbar";
 import HotDrinks from "@/app/(dashboard)/menu/menuSections/HotDrinks";
 import ColdDrinks from "@/app/(dashboard)/menu/menuSections/ColdDrinks";
