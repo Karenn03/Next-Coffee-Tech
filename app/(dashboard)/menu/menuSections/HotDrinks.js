@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { useCart } from "@/app/(dashboard)/shoppingCart/cartContext";
 import MenuTitle from "@/components/titles/MenuTitle";
 import ProductsBox from "@/components/boxes/ProductsBox";
 
@@ -16,6 +19,7 @@ import MacchiatoEspresso from "@/public/img/macchiato-espresso.png";
 import Mocha from "@/public/img/mocha.png";
 
 const HotDrinks = () => {
+  const { addToCart } = useCart();
   return (
     <>
       <MenuTitle title="Bebidas Calientes" />
@@ -26,6 +30,7 @@ const HotDrinks = () => {
           imageAlt="Cappuccino Americano"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="CAPPUCCINO"
@@ -33,6 +38,7 @@ const HotDrinks = () => {
           imageAlt="Cappuccino"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="CARAMEL MACCHIATO"
@@ -40,6 +46,7 @@ const HotDrinks = () => {
           imageAlt="Caramel Macchiato"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="ESPRESSO DOBLE"
@@ -47,6 +54,7 @@ const HotDrinks = () => {
           imageAlt="Espresso Doble"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="ESPRESSO SENCILLO"
@@ -54,6 +62,7 @@ const HotDrinks = () => {
           imageAlt="Espresso Sencillo"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="CHOCOLATE"
@@ -61,6 +70,7 @@ const HotDrinks = () => {
           imageAlt="Chocolate"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="CHOCOLATE BLANCO"
@@ -68,6 +78,7 @@ const HotDrinks = () => {
           imageAlt="Chocolate Blanco"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="LATTE MACCHIATO"
@@ -75,6 +86,7 @@ const HotDrinks = () => {
           imageAlt="Latte Macchiato"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="LATTE"
@@ -82,6 +94,7 @@ const HotDrinks = () => {
           imageAlt="Latte"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="MACCHIATO"
@@ -89,6 +102,7 @@ const HotDrinks = () => {
           imageAlt="Macchiato"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="MACCHIATO ESPRESSO"
@@ -96,6 +110,7 @@ const HotDrinks = () => {
           imageAlt="Macchiato Espresso"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="MOCHA"
@@ -103,6 +118,7 @@ const HotDrinks = () => {
           imageAlt="Mocha"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
       </div>
     </>

@@ -38,7 +38,7 @@ export default function ReserveTable() {
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10 p-6 md:p-10">
                     <form
                         onSubmit={handleSubmit}
-                        className="w-full md:w-1/2 bg-[#E1DFDC] rounded-2xl shadow-xl p-8 flex flex-col gap-6"
+                        className="w-full md:w-1/2 bg-[#E1DFDC] rounded-2xl shadow-md p-8 flex flex-col gap-6"
                     >
                         <h2 className="text-3xl font-bold text-[#4A362F]">Reservar Mesa</h2>
                         <div className="flex flex-col">
@@ -89,19 +89,19 @@ export default function ReserveTable() {
                             Confirmar Reserva
                         </button>
                     </form>
-                    <div className="w-full md:w-1/2 bg-[#E1DFDC] rounded-2xl shadow-xl p-8 border border-[#e8ded7]">
+                    <div className="w-full md:w-1/2 bg-[#E1DFDC] rounded-2xl shadow-md p-8 border border-[#e8ded7]">
                         <h2 className="text-3xl font-bold text-[#4A362F] mb-6">Selecciona tu mesa</h2>
                         <div className="flex flex-wrap gap-6 mb-6">
                             <div className="flex items-center gap-2">
-                                <div className="w-5 h-5 bg-green-900 rounded"></div>
+                                <div className="w-5 h-5 bg-green-300 rounded"></div>
                                 <span className="text-[#4A362F] text-sm">Disponible</span>
                             </div>
                             <div className="flex items-center gap-2">
-                                <div className="w-5 h-5 bg-red-900 rounded"></div>
+                                <div className="w-5 h-5 bg-red-300 rounded"></div>
                                 <span className="text-[#4A362F] text-sm">Ocupada</span>
                             </div>
                             <div className="flex items-center gap-2">
-                                <div className="w-5 h-5 bg-[#4A362F] rounded"></div>
+                                <div className="w-5 h-5 bg-gray-400 rounded"></div>
                                 <span className="text-[#4A362F] text-sm">Seleccionada</span>
                             </div>
                         </div>
@@ -110,10 +110,10 @@ export default function ReserveTable() {
                                 const isDisponible = mesasDisponibles.includes(mesa);
                                 const isSelected = mesaSeleccionada === mesa.id;
                                 const bgColor = mesa.ocupada
-                                    ? "bg-red-800"
+                                    ? "border-3 border-red-300 bg-[#F2F2F3]"
                                     : isSelected
-                                        ? "bg-[#5E443C]"
-                                        : "bg-green-800";
+                                        ? "border-3 border-gray-400 bg-[#F2F2F3]"
+                                        : "border-3 border-green-300 bg-[#F2F2F3]";
 
                                 return (
                                     <button
@@ -126,7 +126,7 @@ export default function ReserveTable() {
                                         disabled={mesa.ocupada || !isDisponible}
                                         className={`
                                         w-full h-24 rounded-xl flex flex-col items-center justify-center 
-                                        text-white font-bold transition shadow-md text-center
+                                        text-zinc-500 font-bold transition shadow-md text-center
                                         ${bgColor}
                                         ${mesa.ocupada || !isDisponible
                                                 ? "opacity-40 cursor-not-allowed"

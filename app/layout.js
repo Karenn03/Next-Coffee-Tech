@@ -1,6 +1,7 @@
 import { Montserrat, Fjalla_One } from "next/font/google";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./globals.css";
+import { CartProvider } from "./(dashboard)/shoppingCart/cartContext";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -24,7 +25,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${montserrat.variable} ${fjalla.variable} antialiased`}
       >
-        {children}
+        <CartProvider>
+          {children}
+        </CartProvider>
       </body>
     </html>
   );

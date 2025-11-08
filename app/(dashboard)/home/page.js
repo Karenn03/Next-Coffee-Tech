@@ -150,10 +150,10 @@ const Home = () => {
             {/* Overall rating */}
             <div className="flex flex-col justify-center items-center text-center w-full md:w-1/3">
               <div className="flex flex-col items-center justify-center w-[180px]">
-                <h2 className="text-7xl font-fjalla text-[#4A362F] w-full text-center mt-2">
+                <h2 className="text-6xl font-montserrat font-bold text-[#4A362F] w-full text-center mt-2">
                   4,5
                 </h2>
-                <div className="flex justify-center text-[#B7AE8F] text-2xl mt-2 mb-2 w-full">
+                <div className="flex justify-center text-[#B7AE8F] text-xl mt-2 mb-2 w-full">
                   <i className="fa-solid fa-star"></i>
                   <i className="fa-solid fa-star"></i>
                   <i className="fa-solid fa-star"></i>
@@ -171,7 +171,7 @@ const Home = () => {
                 Resumen de reseñas
               </h3>
               {[5, 4, 3, 2, 1].map((num, idx) => (
-                <div key={idx} className="flex items-center mb-1">
+                <div key={idx} className="flex items-center mb-[3px]">
                   <span className="w-6 text-sm">{num}</span>
                   <div className="flex-1 h-2 bg-gray-200 rounded-full mx-2">
                     <div
@@ -205,7 +205,7 @@ const Home = () => {
                 ].map((item, idx) => (
                   <div
                     key={idx}
-                    className="flex items-center justify-between mb-1.5"
+                    className="flex items-center justify-between mb-1"
                   >
                     <span className="w-24 text-sm">{item.name}</span>
                     <div className="flex-1 h-2 bg-gray-200 rounded-full mx-2">

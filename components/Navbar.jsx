@@ -12,13 +12,13 @@ export default function Navbar() {
     { title: "Menú", path: "/menu" },
     { title: "Mis pedidos", path: "/myOrders" },
     { title: "Reservar mesa", path: "/reserveTable" },
-    { title: "Carrito", path: "#" },
+    { title: "Carrito", path: "/shoppingCart" },
   ];
 
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 z-50 bg-stone-300 opacity-95 w-full md:text-sm md:border-none ${
+        className={`fixed top-0 left-0 z-50 bg-stone-300/90 backdrop-blur-sm w-full md:text-sm md:border-none ${
           state ? "shadow-lg rounded-b-xl md:shadow-none" : ""
         }`}
       >

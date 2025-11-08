@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { useCart } from "@/app/(dashboard)/shoppingCart/cartContext";
 import MenuTitle from "@/components/titles/MenuTitle";
 import ProductsBox from "@/components/boxes/ProductsBox";
 
@@ -28,6 +31,7 @@ import PastelZanahoria from "@/public/img/pastel zanahoria.png";
 import Tiramisú from "@/public/img/tiramisu.png";
 
 const Bakery = () => {
+  const { addToCart } = useCart();
   return (
     <>
       <MenuTitle title="Panadería y Pastelería" />
@@ -38,6 +42,7 @@ const Bakery = () => {
           imageAlt="Cheesecake de Fresa"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="CROISSANT DE ALMENDRAS"
@@ -45,6 +50,7 @@ const Bakery = () => {
           imageAlt="Croissant de Almendras"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="CROISSANT DE CHOCOLATE"
@@ -52,6 +58,7 @@ const Bakery = () => {
           imageAlt="Croissant de Chocolate"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="CROISSANT DE JAMÓN Y QUESO"
@@ -59,6 +66,7 @@ const Bakery = () => {
           imageAlt="Croissant de Jamón y Queso"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="CROISSANT DE MANTEQUILLA"
@@ -66,6 +74,7 @@ const Bakery = () => {
           imageAlt="Croissant de Mantequilla"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="DONA DE CHOCOLATE BLANCO"
@@ -73,6 +82,7 @@ const Bakery = () => {
           imageAlt="Dona de Chocolate Blanco"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="DONA DE CHOCOLATE"
@@ -80,6 +90,7 @@ const Bakery = () => {
           imageAlt="Dona de Chocolate"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="DONA DE FRESA"
@@ -87,6 +98,7 @@ const Bakery = () => {
           imageAlt="Dona de Fresa"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="GALLETA CHIPS DE CHOCOLATE"
@@ -94,6 +106,7 @@ const Bakery = () => {
           imageAlt="Galleta Chips de Chocolate"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="GALLETA DE AVENA"
@@ -101,6 +114,7 @@ const Bakery = () => {
           imageAlt="Galleta de Avena"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="GALLETA DE CHOCOLATE"
@@ -108,6 +122,7 @@ const Bakery = () => {
           imageAlt="Galleta de Chocolate"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="GALLETA DE MANTEQUILLA"
@@ -115,6 +130,7 @@ const Bakery = () => {
           imageAlt="Galleta de Mantequilla"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="MUFFIN CHIPS DE BANANA"
@@ -122,6 +138,7 @@ const Bakery = () => {
           imageAlt="Muffin Chips de Banana"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="MUFFIN CHIPS DE CHOCOLATE"
@@ -129,6 +146,7 @@ const Bakery = () => {
           imageAlt="Muffin Chips de Chocolate"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="MUFFIN DE ARÁNDANOS"
@@ -136,6 +154,7 @@ const Bakery = () => {
           imageAlt="Muffin de Arándanos"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="MUFFIN DE CHOCOLATE"
@@ -143,6 +162,7 @@ const Bakery = () => {
           imageAlt="Muffin de Chocolate"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="MUFFIN DE FRESA"
@@ -150,6 +170,7 @@ const Bakery = () => {
           imageAlt="Muffin de Fresa"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="MUFFIN DE OREO"
@@ -157,6 +178,7 @@ const Bakery = () => {
           imageAlt="Muffin de Oreo"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="MUFFIN DE RED VELVET"
@@ -164,6 +186,7 @@ const Bakery = () => {
           imageAlt="Muffin de Red Velvet"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="PASTEL DE CHOCOLATE"
@@ -171,6 +194,7 @@ const Bakery = () => {
           imageAlt="Pastel de Chocolate"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="PASTEL DE LIMÓN"
@@ -178,6 +202,7 @@ const Bakery = () => {
           imageAlt="Pastel de Limón"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="PASTEL DE RED VELVET"
@@ -185,6 +210,7 @@ const Bakery = () => {
           imageAlt="Pastel de Red Velvet"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="PASTEL DE ZANAHORIA"
@@ -192,6 +218,7 @@ const Bakery = () => {
           imageAlt="Pastel de Zanahoria"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="TIRAMISÚ"
@@ -199,6 +226,7 @@ const Bakery = () => {
           imageAlt="Tiramisú"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
       </div>
     </>

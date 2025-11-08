@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { useCart } from "@/app/(dashboard)/shoppingCart/cartContext";
 import MenuTitle from "@/components/titles/MenuTitle";
 import ProductsBox from "@/components/boxes/ProductsBox";
 
@@ -16,6 +19,7 @@ import MilkshakeOreo from "@/public/img/milkshake-oreo.png";
 import MilkshakeVainilla from "@/public/img/milkshake-vainilla.png";
 
 const ColdDrinks = () => {
+  const { addToCart } = useCart();
   return (
     <>
       <MenuTitle title="Bebidas Frías" />
@@ -26,6 +30,7 @@ const ColdDrinks = () => {
           imageAlt="Frappé Mocca"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="FRAPPÉ OREO"
@@ -33,6 +38,7 @@ const ColdDrinks = () => {
           imageAlt="Frappé Oreo"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="ICED CAPPUCCINO"
@@ -40,6 +46,7 @@ const ColdDrinks = () => {
           imageAlt="Iced Cappuccino"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="ICED CARAMEL LATTE"
@@ -47,6 +54,7 @@ const ColdDrinks = () => {
           imageAlt="Iced Caramel Latte"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="ICED CARAMEL MACCHIATO"
@@ -54,6 +62,7 @@ const ColdDrinks = () => {
           imageAlt="Iced Caramel Macchiato"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="ICED MACCHIATO"
@@ -61,6 +70,7 @@ const ColdDrinks = () => {
           imageAlt="Iced Macchiato"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="ICED MOCHA"
@@ -68,6 +78,7 @@ const ColdDrinks = () => {
           imageAlt="Iced Mocha"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="ICED LATTE"
@@ -75,6 +86,7 @@ const ColdDrinks = () => {
           imageAlt="Iced Latte"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="MILKSHAKE CHOCOLATE"
@@ -82,6 +94,7 @@ const ColdDrinks = () => {
           imageAlt="Milkshake Chocolate"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="MILKSHAKE FRESA"
@@ -89,6 +102,7 @@ const ColdDrinks = () => {
           imageAlt="Milkshake Fresa"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="MILKSHAKE OREO"
@@ -96,6 +110,7 @@ const ColdDrinks = () => {
           imageAlt="Milkshake Oreo"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="MILKSHAKE VAINILLA"
@@ -103,6 +118,7 @@ const ColdDrinks = () => {
           imageAlt="Milkshake Vainilla"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
       </div>
     </>

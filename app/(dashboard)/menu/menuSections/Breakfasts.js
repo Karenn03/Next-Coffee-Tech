@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { useCart } from "@/app/(dashboard)/shoppingCart/cartContext";
 import MenuTitle from "@/components/titles/MenuTitle";
 import ProductsBox from "@/components/boxes/ProductsBox";
 
@@ -28,6 +31,7 @@ import WrapRoastBeef from "@/public/img/wrap-roast-beef.png";
 import WrapTradicionalRes from "@/public/img/wrap-tradicional-de-res.png";
 
 const Breakfasts = () => {
+  const { addToCart } = useCart();
   return (
     <>
       <MenuTitle title="Desayunos y Brunch" />
@@ -38,6 +42,7 @@ const Breakfasts = () => {
           imageAlt="Bagel de Jamón y Queso"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="BAGEL DE QUESO CREMA"
@@ -45,6 +50,7 @@ const Breakfasts = () => {
           imageAlt="Bagel de Queso Crema"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="BAGEL DE SALMÓN AHUMADO"
@@ -52,6 +58,7 @@ const Breakfasts = () => {
           imageAlt="Bagel de Salmón Ahumado"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="BENEDICTINOS"
@@ -59,6 +66,7 @@ const Breakfasts = () => {
           imageAlt="Benedictinos"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="BOWL DE AÇAI"
@@ -66,6 +74,7 @@ const Breakfasts = () => {
           imageAlt="Bowl de Açai"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="BOWL DE YOGURT"
@@ -73,6 +82,7 @@ const Breakfasts = () => {
           imageAlt="Bowl de Yogurt"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="BOWL DE QUINUA Y VEGETALES"
@@ -80,6 +90,7 @@ const Breakfasts = () => {
           imageAlt="Bowl de Quinua y Vegetales"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="PANCAKES"
@@ -87,6 +98,7 @@ const Breakfasts = () => {
           imageAlt="Pancakes"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="PANCAKES DE CHOCOLATE"
@@ -94,6 +106,7 @@ const Breakfasts = () => {
           imageAlt="Pancakes de Chocolate"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="SÁNDWICH DE CARNE Y QUESO"
@@ -101,6 +114,7 @@ const Breakfasts = () => {
           imageAlt="Sándwich de Carne y Queso"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="SÁNDWICH DE JAMÓN Y QUESO"
@@ -108,6 +122,7 @@ const Breakfasts = () => {
           imageAlt="Sándwich de Jamón y Queso"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="SÁNDWICH DE PAVO Y AGUACATE"
@@ -115,6 +130,7 @@ const Breakfasts = () => {
           imageAlt="Sándwich de Pavo y Aguacate"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="TORTILLA DE JAMÓN Y QUESO"
@@ -122,6 +138,7 @@ const Breakfasts = () => {
           imageAlt="Tortilla de Jamón y Queso"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="TOSTADA DE AGUACATE"
@@ -129,6 +146,7 @@ const Breakfasts = () => {
           imageAlt="Tostada de Aguacate"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="TOSTADAS FRANCESAS"
@@ -136,6 +154,7 @@ const Breakfasts = () => {
           imageAlt="Tostadas Francesas"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="TOSTADA DE JAMÓN Y QUESO"
@@ -143,6 +162,7 @@ const Breakfasts = () => {
           imageAlt="Tostada de Jamón y Queso"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="WAFFLES"
@@ -150,6 +170,7 @@ const Breakfasts = () => {
           imageAlt="Waffles"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="WRAP CARNES Y MOZZARELLA"
@@ -157,6 +178,7 @@ const Breakfasts = () => {
           imageAlt="Wrap Carnes y Mozzarella"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="WRAP COSTILLITAS"
@@ -164,6 +186,7 @@ const Breakfasts = () => {
           imageAlt="Wrap Costillitas"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="WRAP HAWAIANO"
@@ -171,6 +194,7 @@ const Breakfasts = () => {
           imageAlt="Wrap Hawaiano"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="WRAP DE JAMÓN Y MOZZARELLA"
@@ -178,6 +202,7 @@ const Breakfasts = () => {
           imageAlt="Wrap de Jamón y Mozzarella"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="WRAP DE POLLO"
@@ -185,6 +210,7 @@ const Breakfasts = () => {
           imageAlt="Wrap de Pollo"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="WRAP ROAST BEEF"
@@ -192,6 +218,7 @@ const Breakfasts = () => {
           imageAlt="Wrap Roast Beef"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
         <ProductsBox
           title="WRAP TRADICIONAL DE RES"
@@ -199,6 +226,7 @@ const Breakfasts = () => {
           imageAlt="Wrap Tradicional de Res"
           detailsLink="/"
           price={4.99}
+          onAddToCart={addToCart}
         />
       </div>
     </>
