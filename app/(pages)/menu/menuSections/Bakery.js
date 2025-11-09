@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { useCart } from "@/app/(dashboard)/shoppingCart/cartContext";
+import { useCart } from "@/app/(pages)/shoppingCart/cartContext";
 import MenuTitle from "@/components/titles/MenuTitle";
 import ProductsBox from "@/components/boxes/ProductsBox";
 

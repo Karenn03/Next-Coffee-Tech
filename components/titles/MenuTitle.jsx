@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "@/public/img/header.webp";
 
-const TitleMenu = ({ title }) => {
+const MenuTitle = ({ title }) => {
   return (
     <>
       <header
@@ -16,4 +16,4 @@ const TitleMenu = ({ title }) => {
   );
 };
 
-export default TitleMenu;
+export default MenuTitle;

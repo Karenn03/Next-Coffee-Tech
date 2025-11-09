@@ -11,7 +11,6 @@ export default function Navbar() {
   const navigation = [
     { title: "Menú", path: "/menu" },
     { title: "Mis pedidos", path: "/myOrders" },
-    { title: "Reservar mesa", path: "/reserveTable" },
     { title: "Carrito", path: "/shoppingCart" },
   ];
 

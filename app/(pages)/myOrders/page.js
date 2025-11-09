@@ -2,7 +2,6 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
-import Navbar from "@/components/Navbar";
 import { motion } from "framer-motion";
 
 const MyOrders = () => {
@@ -81,7 +80,6 @@ const MyOrders = () => {
     };
     return (
         <>
-            <Navbar />
             <div className="font-montserrat bg-[#E1DFDC] rounded-2xl mt-28 mb-5 shadow-md w-[90%] mx-auto px-7 py-7">
                 <div className="relative flex flex-wrap gap-4 mb-3.5 pb-2">
                     {tabs.map((tab) => (

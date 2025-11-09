@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 
-import Navbar from "@/components/Navbar";
 import Title1 from "@/components/titles/Title1";
 import Title2 from "@/components/titles/Title2";
 import Title3 from "@/components/titles/Title3";
@@ -24,7 +23,6 @@ import comentario from "@/public/img/comentario.jpg"
 const Home = () => {
   return (
     <>
-      <Navbar />
       {/* Welcome Section */}
       <section
         className="relative flex flex-col justify-center items-center bg-fixed bg-cover bg-center text-white w-full h-screen px-4 text-center"
