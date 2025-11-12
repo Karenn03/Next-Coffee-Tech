@@ -17,46 +17,46 @@ export default function PickupModal({ trigger }) {
 
   const stores = [
     {
-      name: "Cosmocentro",
-      address: "Calle 5 50-103, piso 2, Panamericano",
-      lat: 3.4051,
-      lng: -76.5394,
+      name: "Centro Comercial Portal 80",
+      address: "Av Cl 80 #100 - 52",
+      lat: 4.71084,
+      lng: -74.11192,
+    },
+    {
+      name: "Alkosto Av 68",
+      address: "Av. 68 #Calle 72 - 43",
+      lat: 4.67993,
+      lng: -74.08528,
     },
     {
       name: "Diver Plaza",
-      address: "Transversal 99 70A - 89, Isla 3, El Pedregal",
-      lat: 4.7206,
-      lng: -74.0961,
+      address: "Transversal 99 70A - 89",
+      lat: 4.70095,
+      lng: -74.11524,
     },
     {
-      name: "Dunkin Homecenter Industriales",
-      address: "Carrera 48 14-135, Local 3, Villa Carlota",
-      lat: 6.2311,
-      lng: -75.5746,
+      name: "Centro Comercial Nuestro Bogotá",
+      address: "Av Ciudad de Cali #55A - 75",
+      lat: 4.68433,
+      lng: -74.11543,
     },
     {
-      name: "Dunkin San Cayetano",
-      address: "Calle 50 82-55, Bogotá, Los Monjes",
-      lat: 4.6551,
-      lng: -74.0953,
+      name: "Titán Plaza",
+      address: "Av. Cra. 72 #80 - 94",
+      lat: 4.6948,
+      lng: -74.08639,
     },
     {
-      name: "Diver Plaza",
-      address: "Transversal 99 70A - 89, Isla 3, El Pedregal",
-      lat: 4.7206,
-      lng: -74.0961,
+      name: "Modelia",
+      address: "Cl. 23f #74A - 81",
+      lat: 4.66518,
+      lng: -74.12065,
     },
     {
-      name: "Dunkin Homecenter Industriales",
-      address: "Carrera 48 14-135, Local 3, Villa Carlota",
-      lat: 6.2311,
-      lng: -75.5746,
-    },
-    {
-      name: "Dunkin San Cayetano",
-      address: "Calle 50 82-55, Bogotá, Los Monjes",
-      lat: 4.6551,
-      lng: -74.0953,
+      name: "Skandia",
+      address: "AV. 19 #109A - 30",
+      lat: 4.69596,
+      lng: -74.05027,
     },
   ];
 
@@ -69,7 +69,6 @@ export default function PickupModal({ trigger }) {
       <div onClick={onOpen} className="cursor-pointer">
         {trigger}
       </div>
-
       <Modal
         backdrop="blur"
         isOpen={isOpen}

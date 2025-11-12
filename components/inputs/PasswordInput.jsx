@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 
-const PasswordInput = ({ value, onChange, placeholder }) => {
+const PasswordInput = ({ placeholder, value, onChange }) => {
   const [isPasswordHidden, setPasswordHidden] = useState(true);
 
   return (
