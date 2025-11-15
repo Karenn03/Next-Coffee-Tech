@@ -8,7 +8,7 @@ import Title3 from "@/components/titles/Title3";
 import Button1 from "@/components/buttons/Button1";
 import OffersBox from "@/components/boxes/OffersBox";
 import CommentsBox from "@/components/boxes/CommentsBox";
-import Footer from "@/components/Footer";
+import Footer from "@/components/menus/Footer";
 import PickupModal from "@/components/modals/PickupModal";
 
 import landing from "@/public/img/landing.jpg";

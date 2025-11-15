@@ -33,9 +33,9 @@ export default function Navbar() {
                 onClick={() => setState(!state)}
               >
                 {state ? (
-                  <i className="fa-solid fa-xmark text-2xl"></i>
+                  <i className="fa-solid fa-xmark text-2xl" />
                 ) : (
-                  <i className="fa-solid fa-bars text-2xl"></i>
+                  <i className="fa-solid fa-bars text-2xl" />
                 )}
               </button>
             </div>

@@ -1,9 +1,11 @@
-import Navbar from "@/components/menus/Navbar";
+import AdminNavbar from "@/components/menus/AdminNavbar";
+import Sidebar from "@/components/menus/Sidebar";
 
 export default function RootLayout({ children }) {
     return (
         <>
-            <Navbar />
+            <AdminNavbar />
+            <Sidebar />
             <main>
                 {children}
             </main>
