@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import forms from "@/public/img/forms.jpg";
 import logo from "@/public/img/logo.png";
-import Input from "@/components/Inputs/Input";
+import AuthInput from "@/components/inputs/AuthInput";
 
 const ForgotPassword = () => {
     return (
@@ -30,7 +30,7 @@ const ForgotPassword = () => {
                     Ingresa tu correo electrónico y te enviaremos un enlace para restablecerla.
                 </p>
                 <form className="space-y-2">
-                    <Input icon="fa-envelope" type="email" placeholder="Correo Electrónico" />
+                    <AuthInput icon="fa-envelope" type="email" placeholder="Correo Electrónico" />
                     <button
                         type="submit"
                         className="w-full py-2 bg-[#4A362F] text-white rounded-xl text-base mt-2 h-10 hover:bg-[#3b2d27] transition"

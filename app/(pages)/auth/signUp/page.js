@@ -5,7 +5,7 @@ import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
 
-import Input from "@/components/Inputs/Input";
+import AuthInput from "@/components/inputs/AuthInput";
 import PasswordInput from "@/components/Inputs/PasswordInput";
 import logo from "@/public/img/logo.png";
 import forms from "@/public/img/forms.jpg";
@@ -60,14 +60,14 @@ const SignUp = () => {
                     </Link>
                 </h2>
                 <form className="space-y-4" onSubmit={handleSubmit}>
-                    <Input icon="fa-id-card" type="text" placeholder="Documento" value={documento} onChange={(e) => setDocumento(e.target.value)} />
-                    <Input icon="fa-user-pen" type="text" placeholder="Nombres" value={nombres} onChange={(e) => setNombres(e.target.value)} />
-                    <Input icon="fa-user-large" type="text" placeholder="Apellidos" value={apellidos} onChange={(e) => setApellidos(e.target.value)} />
-                    <Input icon="fa-envelope" type="email" placeholder="Correo Electrónico" value={correoElectronico} onChange={(e) => setCorreoElectronico(e.target.value)} />
+                    <AuthInput icon="fa-id-card" type="text" placeholder="Documento" value={documento} onChange={(e) => setDocumento(e.target.value)} />
+                    <AuthInput icon="fa-user-pen" type="text" placeholder="Nombres" value={nombres} onChange={(e) => setNombres(e.target.value)} />
+                    <AuthInput icon="fa-user-large" type="text" placeholder="Apellidos" value={apellidos} onChange={(e) => setApellidos(e.target.value)} />
+                    <AuthInput icon="fa-envelope" type="email" placeholder="Correo Electrónico" value={correoElectronico} onChange={(e) => setCorreoElectronico(e.target.value)} />
                     <PasswordInput placeholder="Contraseña" value={contraseña} onChange={(e) => setContraseña(e.target.value)} />
                     <PasswordInput placeholder="Confirmar contraseña" />
-                    <Input icon="fa-phone" type="text" placeholder="Teléfono" value={telefono} onChange={(e) => setTelefono(e.target.value)} />
-                    <Input icon="fa-location-dot" type="text" placeholder="Dirección" value={direccion} onChange={(e) => setDireccion(e.target.value)} />
+                    <AuthInput icon="fa-phone" type="text" placeholder="Teléfono" value={telefono} onChange={(e) => setTelefono(e.target.value)} />
+                    <AuthInput icon="fa-location-dot" type="text" placeholder="Dirección" value={direccion} onChange={(e) => setDireccion(e.target.value)} />
                     <button
                         type="submit"
                         className="w-full py-2 bg-[#4A362F] text-white border-none rounded-xl cursor-pointer text-base mt-2 h-10 hover:bg-[#3b2d27] transition"

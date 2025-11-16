@@ -1,6 +1,6 @@
 import React from "react";
 
-const Input = ({ icon, type, placeholder, value, onChange }) => {
+const AuthInput = ({ icon, type, placeholder, value, onChange }) => {
   return (
     <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg">
       <i
@@ -17,4 +17,4 @@ const Input = ({ icon, type, placeholder, value, onChange }) => {
   );
 };
 
-export default Input;
+export default AuthInput;

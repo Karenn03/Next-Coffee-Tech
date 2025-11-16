@@ -16,8 +16,8 @@ const Sidebar = () => {
       ),
     },
     {
-      href: "/dashboard/person",
-      name: "Empleados",
+      href: "/dashboard/staff",
+      name: "Personal",
       icon: (
         <Icon
           icon="healthicons:city-worker-outline"
